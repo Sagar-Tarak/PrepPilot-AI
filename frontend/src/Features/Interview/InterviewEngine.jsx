@@ -13,14 +13,12 @@ const InterviewEngine = () => {
     experience: "2",
   });
 
-  const [currentQuestion, setCurrentQuestion] = useState(null);
   const [answer, setAnswer] = useState("");
-  const [feedback, setFeedback] = useState(null);
   const [isEvaluating, setIsEvaluating] = useState(false);
 
   return (
     <DashboardLayout>
-      <div className="py-8">
+      <div className="h-full">
         {view === "setup" && (
           <SetupView config={config} setConfig={setConfig} setView={setView} />
         )}
